@@ -1,30 +1,29 @@
 import React, { useEffect } from 'react'
 import axios from "axios";
-import Result from "./Result"
+
 import {useState} from "react"
 
 
 var sym1=sessionStorage.getItem("selectedsymptom1");
-
-   var sym2=sessionStorage.getItem("selectedsymptom2");
-    var sym3=sessionStorage.getItem("selectedsymptom3");
-    var sym4=sessionStorage.getItem("selectedsymptom4");
-    var sym5=sessionStorage.getItem("selectedsymptom5");
-    var sym6=sessionStorage.getItem("selectedsymptom6");
+var sym2=sessionStorage.getItem("selectedsymptom2");
+var sym3=sessionStorage.getItem("selectedsymptom3");
+var sym4=sessionStorage.getItem("selectedsymptom4");
+var sym5=sessionStorage.getItem("selectedsymptom5");
+var sym6=sessionStorage.getItem("selectedsymptom6");
 sessionStorage.clear();
 
 
 
-    var api_url="";
-    var arr=[sym1,sym2,sym3,sym4,sym5,sym6];
-    for(var i=0;i<arr.length;i++)
-    {
-        if(arr[i]!="" && arr[i]!=null)
-        {var temp="/"+arr[i];
-    api_url+=temp;}
-    else if(arr[i]=="")
-    {continue;}
-    }
+var api_url="";
+var arr=[sym1,sym2,sym3,sym4,sym5,sym6];
+for(var i=0;i<arr.length;i++)
+{
+    if(arr[i]!="" && arr[i]!=null)
+    {var temp="/"+arr[i]
+api_url+=temp;}
+else if(arr[i]=="")
+{continue;}
+}
 
 
     
@@ -36,16 +35,16 @@ sessionStorage.clear();
             console.log("dis",disease)
         }
         )*/
-var postt=""
+        var postt=""
         var disss=""
         var dat=""
 
         function abcdef(dis1){
-    disss=localStorage.getItem("predicteddis");
+        disss=localStorage.getItem("predicteddis");
         }
         //var store=[]
         function awaitTime(ms){
-            return new Promise(resolve=>setTimeout(resolve,ms));
+          return new Promise(resolve=>setTimeout(resolve,ms));
         }
         
         async function api_call(){
@@ -75,7 +74,10 @@ var postt=""
             //disss=dat;
             return dat
         }
-    var disease=api_call();
+
+        console.log("abcdef",dat)
+
+    var disease=api_call()
 
     function Abcd(){const [post,setPost]=useState(null);
         useEffect(()=>{
@@ -85,13 +87,15 @@ var postt=""
             })
         },[])
       //  })
-       postt=post
+console.log("post",post)
 
         //axios.get(api_url).then(response=>{disease=response.data;disease=JSON.stringify(response);})
 //const response=axios.get(api_url);
        
-    //var disease=api_call()
-   // disease=api_call()
+    
+     
+
+    
     disss=localStorage.getItem("predicteddis")
     var disss2=localStorage.getItem("predicteddis")
 
@@ -101,7 +105,7 @@ var postt=""
 
     //disease.then(value=>{dis=value;})
 //var dis=Promise.resolve(disease)
-var dis=disease;
+    var dis=disease;
     console.log("array:",disss)
 
     //var dis=(Object.values(disease))[1]
@@ -123,7 +127,7 @@ function trial2() {
         <div>
            
             <h2 style={{fontFamily:"Rubik,sans-serif"}}>The predicted disease is: <span dangerouslySetInnerHTML={Abcd()}></span></h2>
-            {postt}
+            
         </div>
 
     )

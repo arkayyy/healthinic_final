@@ -1,5 +1,5 @@
 import React from "react";
-import "./LoginPage.css";
+import "./Signup.css";
 
 
 
@@ -58,16 +58,44 @@ function LoginPage() {
         <input className="intxt" type="text" required/>
         <div className="underline">
 </div>
-<label>Username</label>
+<label>Name</label>
       </div>
 </div>
 </div>
 
 
 
+
+
             </div>
-            
+
             <div className="body">
+
+              <div className="wrapper">
+      <div className="input-data">
+        <input className="intxt" type="text" required/>
+        <div className="underline">
+</div>
+<label>Mobile</label>
+      </div>
+</div>
+</div>
+
+
+
+            <div className="body" style={{marginTop:"-8%"}}>
+
+              <div className="wrapper">
+      <div className="input-data">
+        <input className="intxt" type="text" required/>
+        <div className="underline">
+</div>
+<label>Email</label>
+      </div>
+</div>
+</div>
+            
+            <div className="body" style={{marginTop:"-7%"}}>
 
               <div className="wrapper">
       <div className="input-data">
@@ -77,19 +105,26 @@ function LoginPage() {
 <label>Password</label>
       </div>
  </div>
+
+ 
   </div>
-            <a classsName="forgotbutton" style={{fontFamily:"Rubik,sans-serif",textDecoration:"none",color:"black"}} href="forgotpass">
-              Forgot Password?
-            </a>
-            <input type="submit" className="btn" value="Login" />
-            <a classsName="accountbutton" style={{fontFamily:"Rubik,sans-serif",fontSize:"14px",textDecoration:"none",color:"#42bd45"}} href="Signup">
-              Create an account
+
+
+
+
+            
+            <input type="submit" className="btn" value="Signup" />
+            <a classsName="accountbutton" style={{fontFamily:"Rubik,sans-serif",fontSize:"14px",textDecoration:"none",color:"#42bd45"}} href="login">
+              Already have an account?/Sign-In
             </a>
           </form>
           
         </div>
       </div>
     </div>
+
+
+
   );
 }
 

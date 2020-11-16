@@ -1,6 +1,6 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
-class App extends Component{
+class Appps extends Component{
     async postData() {
         try{
 
@@ -23,14 +23,16 @@ class App extends Component{
             console.log(e)
         }
     }
-}
 
-render(){
+
+render=()=>{
     return(
-        <div className= "App">
-            <button onClick={ () => thisreturn.postData()} >Press to post data</button>
+        <div className= "App" style={{height:"150vh"}}>
+            <button onClick={ () => this.return.postData()} >Press to post data</button>
         </div>    
     );
 }
 
-export default App;
+}
+
+export default Appps;

@@ -132,7 +132,7 @@ import Select from 'react-select'
 import "./EvaluatePage.css"
 
 const options = [{value:"na",label:"N/A"},
-    { value: 'skin_rash', label: 'Skin Rash' },
+    { value: 'skin_rash', label: 'Skin Rash'},   //a=["skin_rash","Skin Rash"] a[0]
     { value: 'itching', label: 'Itching' },
     { value: 'cough', label: 'Cough' },
     {value:"nodal_skin_erruptions",label:"Nodal Skin Eruptions"},

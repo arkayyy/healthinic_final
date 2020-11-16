@@ -1,9 +1,55 @@
-import React, { useState } from "react";
-
+import React, { useState, useEffect} from "react";
+import fire from './config/firebase'
 import "./App.css";
+import {name} from './Signupsuccess'
+var abc=""
 
-function NavBar() {var abc="SIGN IN | SIGN UP"
+
+/*function Emailset(){var userrr=fire.auth().currentUser
+    if(userrr!=null)
+    {//return{__html:userrr.email}
+    abc=userrr.email
+}
+
+    else if(userrr==null)
+    {
+        //return{__html: "SIGN IN | SIGN UP"}
+        abc="SIGN IN | SIGN UP"
+    }
+}*/
+function Header() {/*var userrr=(fire.auth().currentUser);
+    if(userrr!=null)
+    {abc=userrr.email}
+    else if(userrr==null)
+    {abc="SIGN IN | SIGN UP"}*/
+    
   const [open, setOpen] = useState(false);
+  const [email,isEmail]=useState(null);
+  var user=fire.auth().currentUser;
+
+    
+  /*  if(user!=null)
+    {
+            isEmail(user.email)
+
+            
+        
+           document.querySelector(".signinbtn").innerHTML=user.email;
+
+    }
+    else if(user==null){
+        isEmail(null)
+        document.querySelector(".signinbtn").innerHTML="SIGN IN";
+    }*/
+
+
+  const emailse=()=>{var userr=fire.auth().currentUser
+        if(userr!=null){isEmail(true)
+        abc=userr.email
+    return abc}
+
+        if(userr==null){return("SIGN IN")}
+  }
   return (
     <div className="app__logo">
       <nav>
@@ -43,8 +89,9 @@ function NavBar() {var abc="SIGN IN | SIGN UP"
           <li>
             <a id="navbtn" href="contact">CONTACT US</a>
           </li>
+        
           <li>
-            <a id="navbtn" className="signinbtn" href="login">{abc}</a>
+            <a id="navbtn" className="signinbtn" href="login" >{emailse()}</a>
           </li>
         </ul>
         <i onClick={() => setOpen(!open)} className="fas fa-bars burger"></i>
@@ -53,7 +100,7 @@ function NavBar() {var abc="SIGN IN | SIGN UP"
   );
 }
 
-export default NavBar;
+export default Header;
 
 /* function Header() {
     return (<div className="header">
