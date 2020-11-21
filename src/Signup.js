@@ -5,6 +5,11 @@ import fire from './config/firebase'
 import Home from './Home'
 import Presignup from "./presignup";
 import Signupsuccess from './Signupsuccess'
+import SignUpBoth1 from "./SignUpBoth1";
+import DocDetails from "./DocDetails"
+
+var typeuser=""
+typeuser=sessionStorage.getItem("typeuser")
 
 
 class Signup extends Component{
@@ -13,7 +18,8 @@ class Signup extends Component{
   {
     super(props);
     this.state={
-      user:{}
+      user:{},
+      typeuser: null,
     }
   }
 
@@ -32,7 +38,7 @@ class Signup extends Component{
 
   render(){return(
     <div className="signuppp">
-{this.state.user? (<Signupsuccess/>): (<Presignup/>)}
+{this.state.user? (<Signupsuccess/>): (<SignUpBoth1/>)}
     </div>
   );
     

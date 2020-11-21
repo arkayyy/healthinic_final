@@ -14,15 +14,26 @@ import Result from "./Result"
 import trial4 from "./trial4"
 import Presignup from './presignup'
 import Header from './Header2'
+import fire from './config/firebase'
+import SignUpBoth1 from './SignUpBoth1'
+import SearchResults from './SearchResults'
+import FindDoctor from "./FindDoctor";
+import DocDetails from './DocDetails'
+import DocPortal from './DocPortal'
+import ChatDoctor from './chatDoctor'
 
 
 
-function App() {
+function App() {var email1=""              
   
-  return (
+var user=fire.auth().currentUser
+if(user==null){email1="SIGN IN | SIGN UP"}
+else if(user!=null){email1=user.email}
+
+  return (                                                          
     <Router>
       <div className="app">
-        <Header />
+        <NavBar/>
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/evaluate" exact component={EvaluatePage} />
@@ -31,7 +42,11 @@ function App() {
           <Route path="/res" exact component={Result}/>
           <Route path="/signup" exact component={Signup}/>
           <Route path="/trial" exact component={Trial3}/>
-          <Route path="/trial4" exact component={Presignup}/>
+          <Route path="/trial4" exact component={SignUpBoth1}/>
+          <Route path="/finddoctor" exact component={FindDoctor}/>
+          <Route path="/docdetails" exact component={DocDetails}/>
+          <Route path="/docportal" exact component={DocPortal}/>
+          <Route path="/chatdoc" exact component={ChatDoctor}/>
         </Switch>
 
         <Footer />

@@ -21,7 +21,7 @@ return (
   
   <button type="button" className="list-group-item list-group-item-action">Dapibus ac facilisis in</button>
   <button type="button" className="list-group-item list-group-item-action">Morbi leo risus</button>
-  <button type="button" className="list-group-item list-group-item-action">Porta ac consectetur ac</button>
+  <button type="button" className="list-group-item list-group-item-action">Porta ac vr ac</button>
   <button type="button" className="list-group-item list-group-item-action" disabled>Vestibulum at eros</button>
 </ul>
 </div>
@@ -157,7 +157,7 @@ const options = [{value:"na",label:"N/A"},
     handleChange = sel1 => {
       //selectedopt=document.getElementById("drop1").value;
     
-      this.setState({sel1});
+     this.setState({sel1});
       //selectedopt=JSON.stringify(sel1);
       sessionStorage.setItem("selectedsymptom1",(Object.values(sel1))[0]);
       //sym1=(Object.values(sel1))[0];

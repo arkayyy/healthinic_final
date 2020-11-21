@@ -1,9 +1,16 @@
 import React, { useState } from "react";
 
 import "./App.css";
+import fire from './config/firebase'
 
 function NavBar() {var abc="SIGN IN | SIGN UP"
   const [open, setOpen] = useState(false);
+
+  const authLogOut=()=>{
+    fire.auth().signOut();
+  }
+
+
   return (
     <div className="app__logo">
       <nav>
@@ -20,8 +27,9 @@ function NavBar() {var abc="SIGN IN | SIGN UP"
             className="searchtxt"
             type="text"
             name=""
-            placeholder="Type to search"
+            placeholder="Type to search" 
           />
+        
           <a className="searchButton" href="search">
             <i className="searchimg" class="fas fa-search"></i>
           </a>
@@ -31,6 +39,8 @@ function NavBar() {var abc="SIGN IN | SIGN UP"
           className="nav-links"
           style={{ transform: open ? "translateX(0px)" : "" }}
         >
+
+
           <li>
             <a id="navbtn" href="/">HOME</a>
           </li>
@@ -38,13 +48,17 @@ function NavBar() {var abc="SIGN IN | SIGN UP"
             <a id="navbtn" href="about">ABOUT US</a>
           </li>
           <li>
-            <a id="navbtn" href="services">SERVICES</a>
+            <a id="navbtn" href="finddoctor">FIND DOCTOR</a>
           </li>
           <li>
             <a id="navbtn" href="contact">CONTACT US</a>
           </li>
           <li>
-            <a id="navbtn" className="signinbtn" href="login">{abc}</a>
+            <a id="navbtn" className="signinbtn" href="signup">SIGN IN | SIGN UP</a>
+          </li>
+
+          <li>
+            <a id="navbtn" className="signinbtn" onClick={authLogOut}>LOG OUT</a>
           </li>
         </ul>
         <i onClick={() => setOpen(!open)} className="fas fa-bars burger"></i>
