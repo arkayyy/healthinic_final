@@ -20,7 +20,7 @@ import SearchResults from './SearchResults'
 import FindDoctor from "./FindDoctor";
 import DocDetails from './DocDetails'
 import DocPortal from './DocPortal'
-import ChatDoctor from './chatDoctor'
+//import ChatDoctor from './chatDoctor'
 
 
 
@@ -46,7 +46,7 @@ else if(user!=null){email1=user.email}
           <Route path="/finddoctor" exact component={FindDoctor}/>
           <Route path="/docdetails" exact component={DocDetails}/>
           <Route path="/docportal" exact component={DocPortal}/>
-          <Route path="/chatdoc" exact component={ChatDoctor}/>
+          
         </Switch>
 
         <Footer />

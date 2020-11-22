@@ -6,7 +6,7 @@ function DoctorLeaf(props) {
         <div className="bodyDoctor">
             <div className="docImg">
                 <img src="" alt=""/>
-
+            {this.props.semic}
             </div>
 
             <div className="docName">

@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import axios from "axios";
+import './Result.css'
 
 import {useState} from "react"
 
@@ -132,11 +133,11 @@ function Result() {
     return (
         <div>
             
-           <div className="loader">
+           <div className="loader" style={{display:"flex",flexDirection:"column",objectFit:"contain", alignItems:"center", justifyContent:"center"}}>
                <img src="https://img.techpowerup.org/201110/undraw-medical-care-movn-4-removebg-preview242.png" alt=""/>
            </div>
            {tfunc}
-            <h2 style={{fontFamily:"Rubik,sans-serif"}}>The predicted disease is: <span dangerouslySetInnerHTML={Abcd()}></span></h2>
+            <h2 className="diseaseName" style={{fontFamily:"Rubik,sans-serif",marginLeft:"34%"}}>The predicted disease is: <span dangerouslySetInnerHTML={Abcd()}></span></h2>
             
         </div>
 

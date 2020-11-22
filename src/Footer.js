@@ -21,27 +21,27 @@ function Footer() {
       <div class="button">
         <div class="icon">
 <i class="fab fa-facebook-f"></i></div>
-<span>Aparna Patro</span>
+<span>Techsters</span>
       </div>
 <div class="button">
         <div class="icon">
 <i class="fab fa-twitter"></i></div>
-<span>Aparna Patro</span>
+<span>Techsters</span>
       </div>
 <div class="button">
         <div class="icon">
 <i class="fab fa-instagram"></i></div>
-<span>Aparna Patro</span>
+<span>Techsters</span>
       </div>
 <div class="button">
         <div class="icon">
 <i class="fab fa-github"></i></div>
-<span>Aparna Patro</span>
+<span>Techsters</span>
       </div>
 <div class="button">
         <div class="icon">
 <i class="fab fa-youtube"></i></div>
-<span>Aparna Patro</span>
+<span>Techsters</span>
       </div>
 </div>
 

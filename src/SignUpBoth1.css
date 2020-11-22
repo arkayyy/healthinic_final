@@ -50,6 +50,7 @@
   letter-spacing: 1px;
   text-transform: uppercase;
   transition: transform 80ms ease-in;
+  margin:10px;
 }
 
 .buttonsss:active {
@@ -60,9 +61,13 @@
   outline: none;
 }
 
-.buttonsss.ghosttt {
-  background-color: transparent;
+.ghosttt {
+  background-color: #ededed;
   border-color: #ffffff;
+  margin-top: 10px;
+  border-radius: 30px;
+  width:50%;
+  height: 50px;
 }
 
 .formsss {
@@ -92,7 +97,7 @@
   overflow: hidden;
   width: 768px;
   max-width: 100%;
-  min-height: 480px;
+  min-height: 550px;
 }
 
 .form-container {display: flex;
@@ -253,7 +258,9 @@ footer a {
 
 
 
-
+.errmsg{
+  font-size: small;
+}
 
 
 

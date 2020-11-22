@@ -99,8 +99,10 @@ class FindDoctor extends React.Component {
                 <h1 className="docname1" style={{marginTop:"50px"}}></h1>
                 <h2 className="docemail1"></h2>
                 <h2 className="docspec1" style={{marginBottom:"10px"}}></h2>
-           <a href="" className="contlink1" style={{paddingBottom:"60px"}}></a>
+           <a href="docportal" className="contlink1" style={{paddingBottom:"60px"}}></a>
            </div>
+
+
 
 
            <div className="cont2">
@@ -109,7 +111,7 @@ class FindDoctor extends React.Component {
            <h1 className="docname2" style={{marginTop:"10px"}}></h1>
                 <h2 className="docemail2"></h2>
                 <h2 className="docspec2" style={{marginBottom:"10px"}}></h2>
-                <a href="" className="contlink2" style={{paddingBottom:"20px"}}></a>
+                <a href="docportal" className="contlink2" style={{paddingBottom:"20px"}}></a>
            </div>
 
 
@@ -119,7 +121,7 @@ class FindDoctor extends React.Component {
            <h1 className="docname3" style={{marginTop:"10px"}}></h1>
                 <h2 className="docemail3"></h2>
                 <h2 className="docspec3" style={{marginBottom:"10px"}}></h2>
-                <a href="" className="contlink3" style={{marginBottom:"20px"}}></a>
+                <a href="docportal" className="contlink3" style={{marginBottom:"20px"}}></a>
            </div>
 
 
@@ -129,7 +131,7 @@ class FindDoctor extends React.Component {
            <h1 className="docname4"style={{marginTop:"10px"}}></h1>
                 <h2 className="docemail4"></h2>
                 <h2 className="docspec4" style={{marginBottom:"10px"}}></h2>
-                <a href="" className="contlink4" style={{marginBottom:"20px"}} ></a>
+                <a href="docportal" className="contlink4" style={{marginBottom:"20px"}} ></a>
 
            </div>
 
@@ -138,7 +140,7 @@ class FindDoctor extends React.Component {
            <h1 className="docname4"style={{marginTop:"10px"}}></h1>
                 <h2 className="docemail4"></h2>
                 <h2 className="docspec4" style={{marginBottom:"10px"}}></h2>
-                <a href="" className="contlink4" style={{marginBottom:"20px"}} ></a>
+                <a href="docportal" className="contlink4" style={{marginBottom:"20px"}} ></a>
 
            </div>
 
@@ -147,7 +149,7 @@ class FindDoctor extends React.Component {
            <h1 className="docname4"style={{marginTop:"10px"}}></h1>
                 <h2 className="docemail4"></h2>
                 <h2 className="docspec4" style={{marginBottom:"10px"}}></h2>
-                <a href="" className="contlink4" style={{marginBottom:"20px"}} ></a>
+                <a href="docportal" className="contlink4" style={{marginBottom:"20px"}} ></a>
 
            </div>
 
@@ -156,7 +158,7 @@ class FindDoctor extends React.Component {
            <h1 className="docname4"style={{marginTop:"10px"}}></h1>
                 <h2 className="docemail4"></h2>
                 <h2 className="docspec4" style={{marginBottom:"10px"}}></h2>
-                <a  className="contlink4" ></a>
+                <a  href="docportal" className="contlink4" ></a>
 
            </div>
 
@@ -164,10 +166,7 @@ class FindDoctor extends React.Component {
         </div>
         
 
-        <div className="finddoctor__right">
-        <h1>Chat with your doctor</h1>
-        <div className="chatdoctor__body"></div>
-        </div>
+       
         </div>
 
        
